@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import NewNote from './components/NewNote'
+import Notes from './components/Notes'
+import VisibilityFilter from './components/VisibilityFilter'
+import { useEffect } from 'react'
+import { useDispatch } from 'react-redux'
+import { stateInit } from './reducers/noteReducer'
+const App = ()=>{
+  const dispatch = useDispatch()
+  useEffect( ()=>{
+    
+    
+    dispatch(stateInit())
+    
 
-function App() {
+  },[])
+  
+  const handlerFilter = (filterOf)=>{
+    console.log(filterOf)
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <NewNote/>
+      <VisibilityFilter/>
+      <Notes/>
+    </>
+  )
 }
 
 export default App;

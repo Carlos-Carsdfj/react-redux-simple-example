@@ -1,0 +1,34 @@
+{
+  "notes": [
+    {
+      "id": 1,
+      "content": "este contenido es uno inicial para el programa",
+      "important": true
+    },
+    {
+      "id": 2,
+      "content": "me esta quedando igual casi casi",
+      "important": false
+    },
+    {
+      "id": 3,
+      "content": "este es un cambio desde el servidor json",
+      "important": false
+    },
+    {
+      "content": "como esta el contenido?",
+      "important": false,
+      "id": 4
+    },
+    {
+      "content": "otro mas",
+      "important": false,
+      "id": 5
+    },
+    {
+      "content": "como que esta nota es creada de forma async",
+      "important": false,
+      "id": 6
+    }
+  ]
+}
